@@ -736,7 +736,7 @@ img {
 }
 
 .desc {
-  text-align: justify;
+  text-align: center;
 }
 
 /* Skills */
@@ -769,9 +769,10 @@ img {
   grid-template-columns: 2fr 2fr;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   margin-top: 5rem;
   margin: 2rem;
+  padding-bottom: 5rem;
 }
 .projectimg {
   /* width: 100%; */
