@@ -881,6 +881,7 @@ body .entries .entry .title {
 .contact {
   clear: both;
   width: 100%;
+  padding-bottom: 3rem;
 }
 
 /* input */
