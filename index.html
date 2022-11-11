@@ -33,11 +33,12 @@
     <div class="wrapper">
       <!-- Navigation -->
       <nav class="nav container">
-        <h2>Bibek</h2>
+        <h2>Bibek Shrestha</h2>
         <ul>
-          <li>About Me</li>
-          <li>My Projects</li>
-          <li>Contact Me</li>
+         <a href="#about_me"> <li>About Me</li> </a>
+        <a href="#project"><li>My Projects</li></a>  
+        <a href="#education"><li>My Education</li></a>  
+        <a href="#contact"><li>Contact Me</li></a>  
         </ul>
       </nav>
 
@@ -101,7 +102,7 @@
       <hr class="container" />
 
       <!-- My Projects -->
-      <section class="project">
+      <section class="project" id="project">
         <div class="heading" id="section--1">
           <h1>My Projects</h1>
         </div>
@@ -130,29 +131,27 @@
           </div>
           <div class="projectContainer mt-4">
             <div class="projectimg">
-              <img src="./assets/shed.JPG" alt="" />
+              <img src="./assets/project2.JPG" alt="" />
             </div>
             <div class="projinfo">
-              <h1>Data Management</h1>
+              <h1>E-Commerce Website</h1>
               <div class="links">
                 <a href="github"><i class="fab fa-github"></i></a>
                 <a href="linked"><i class="fab fa-linkedin"></i></a>
                 <a href="linked"><i class="fab fa-chrome"></i></a>
               </div>
               <div class="mt-2">
-                <h6>Tech: HTML CSS JS</h6>
+                <h6>Tech: HTML CSS JS REACT EXPRESS NODE JS </h6>
               </div>
               <p class="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam repudiandae libero soluta fugit, ut culpa.
+                A full stack e-commerce website which fully functioning admin side with inventory, category management and user management.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam repudiandae libero soluta fugit, ut culpa.
+                Different function are implemented with JWT auto login, Email verification, favorites and many more.
               </p>
             </div>
           </div>
-           <div class="projectContainer mt-4">
+           <!-- <div class="projectContainer mt-4">
             <div class="projinfo">
               <h1>Data Management</h1>
               <div class="links">
@@ -200,11 +199,11 @@
                 Quisquam repudiandae libero soluta fugit, ut culpa.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <hr />
-      <div class="about container">
+      <div class="about container"  id="about_me">
         <div class="heading">
           <h1>About Me</h1>
           <div class="myInfo">
@@ -224,7 +223,7 @@
       <hr />
       <!-- education -->
       <div class="wrap">
-        <div class="education ed">
+        <div class="education ed" id="education">
           <div class="heading">
             <h1>Education</h1>
           </div>
@@ -261,7 +260,7 @@
         </div>
       </div>
 
-      <div class="contact container">
+      <div class="contact container" id="contact">
         <hr style="margin-top: 2rem" />
         <div class="heading">
           <h1 class="space">Contact Me!</h1>
