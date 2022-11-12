@@ -649,6 +649,7 @@ a {
   top: 0;
 
   background-color: var(--color-bg);
+  z-index: 10000;
 }
 
 .nav ul {
@@ -855,7 +856,7 @@ body .entries .entry .title {
   top: 50%;
   transform: translateY(-50%);
   right: -73px;
-  z-index: 1000;
+  z-index: 100;
 }
 .entries .entry .title.big:before {
   width: 24px;
