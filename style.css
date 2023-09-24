@@ -18,7 +18,7 @@ html {
   /* overflow: hidden; */
 }
 
-#stars {
+/* #stars {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -580,14 +580,14 @@ html {
   to {
     transform: translateY(-2000px);
   }
-}
+} */
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-size: 1.2rem;
   line-height: 1.6;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   /* word-spacing: 0.5rem; */
   letter-spacing: 00.15rem;
 }
@@ -789,14 +789,14 @@ img {
 
 /* about me */
 .about {
-  background: url(./assets/moon.png);
   /* background-size: cover; */
   background-position: left;
   background-repeat: no-repeat;
   opacity: 0.8;
   display: flex;
+  margin-top: 5rem;
 }
-.myInfo {
+/* .myInfo {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -805,8 +805,16 @@ img {
 }
 .pic img {
   width: 300px;
-}
+} */
 
+.myInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
 /* education */
 /* body {
   background-color: #1d1d1d;
@@ -908,7 +916,7 @@ body .entries .entry .title {
   background-color: transparent;
   color: #fff;
   font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   font-weight: bold;
   letter-spacing: 0.5rem;
 }
@@ -942,10 +950,10 @@ body .entries .entry .title {
   color: #fff;
   background-color: rgb(27, 27, 27);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.social-media-list li:after {
+/* .social-media-list li:after {
   content: "";
   position: absolute;
   top: 0;
@@ -957,7 +965,7 @@ body .entries .entry .title {
   opacity: 0;
   box-shadow: 0 0 0 1px #fff;
   transition: all 0.2s ease-in-out;
-}
+} */
 
 .social-media-list li:hover {
   background-color: #fff;
