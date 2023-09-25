@@ -716,6 +716,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #d1d0c5;
 }
 
 .info h1 {
