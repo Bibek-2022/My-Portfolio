@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "echo 'No install required for static portfolio'",
+  "buildCommand": "echo 'No build required for static portfolio'",
+  "outputDirectory": "."
+}
