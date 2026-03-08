@@ -2,285 +2,201 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibek Shrestha Portfolio</title>
+    <meta
+      name="description"
+      content="Bibek Shrestha portfolio — software developer crafting modern, reliable digital products."
+    />
+    <title>Bibek Shrestha | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-<!-- Devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- <link rel="stylesheet" href="utility.css" /> -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5744958627329842"
-     crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+    <div class="bg-shape shape-a"></div>
+    <div class="bg-shape shape-b"></div>
 
-    <div class="wrapper">
-      <!-- Navigation -->
-      <nav class="nav container">
-        <h2>Bibek Shrestha</h2>
-        <ul>
-         <a href="#about_me"> <li>About Me</li> </a>
-        <a href="#project"><li>My Projects</li></a>  
-        <a href="#education"><li>Education</li></a>  
-        <a href="#contact"><li>Contact</li></a>  
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container nav">
+        <a href="#top" class="logo">Bibek<span>.</span></a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#work">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-      <!-- Hero Section -->
-      <div class="hero container">
-        <div class="info mt-4">
-          <h2>Hi I am Bibek Shrestha</h2>
-          <h1 class="imp">Software Developer</h1>
-          <p class="desc mt-4">
-            I am a software developer with a passion for building things that live on the internet. I love the web and its endless potential. I'm currently working at Linfox Armaguard as a Software Developer. I'm a graduate from Western Sydney University.
+    <main id="top">
+      <section class="hero container">
+        <p class="tag">Software Developer · Sydney</p>
+        <h1>
+          Thoughtful products.<br />
+          <span>Reliable engineering.</span>
+        </h1>
+        <p class="intro">
+          I'm Bibek Shrestha. I build practical digital experiences across web,
+          APIs, and data systems with a focus on maintainability, usability, and
+          performance.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#experience">View Experience</a>
+          <a class="btn btn-outline" href="./assets/Bibek Shrestha Resume.docx"
+            >Download Resume</a
+          >
+        </div>
+        <div class="quick-links">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/Bibek-2022">GitHub</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bibek-shrestha-01">LinkedIn</a>
+          <a href="mailto:shresthabibek2022@gmail.com">Email</a>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="panel about">
+          <h2>About Me</h2>
+          <p>
+            I am a software developer with experience delivering solutions for
+            business workflows, user management, and data-heavy applications. I
+            enjoy translating complex requirements into clean architecture and
+            polished product outcomes.
           </p>
-          <div class="btns">
-            <button class="btn btn-outline btn--scroll-to">
-              See My Projects &DownArrow;
-            </button>
-            <a href="./assets/Bibek Shrestha Resume.docx" class="btn-side"><u>Download my Resume</u></a>
-          </div>
-        </div>
-
-
-        <!-- social media -->
-        <ul class="social-media-list">
-          <li>
-            <a href="https://github.com/Bibek-2022" target="_blank" class="contact-icon">
-             <i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/bibek-shrestha-01" target="_blank" class="contact-icon">
-              <i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="https://shresthabibek2022@gmail.com" target="_blank" class="contact-icon">
-              <i class="fab fa-google"></i></a>
-          </li>
-         
-        </ul>
-        <!-- <div class="image">
-        <img src="./assets/Person.png" alt="" />
-      </div> -->
-      </div>
-      <hr class="container" />
-
-      <!-- Skills -->
-      <section class="skills container mt-5" id="skills">
-        <div class="sec-title heading">
-          <h1>Skills</h1>
-        </div>
-        <div class="sec-content">
-          <span class="icon card"><i class="fab fa-node"></i>Node JS</span>
-          <span class="icon card"><i class="fab fa-react"></i>React</span>
-          <span class="icon card"><i class="devicon-redux-original"></i>Redux</span>
-          <span class="icon card"><i class="fab fa-js"></i>JS</span>
-          <span class="icon card"><i class="fab fa-html5"></i>Html</span>
-          <span class="icon card"><i class="fab fa-css3-alt"></i>CSS</span>
-          <span class="icon card"><i class="devicon-bootstrap-plain"></i>Bootstrap</span>
-
-          <!-- New Skills Added -->
-
-           <span class="icon card"><i class="fas fa-database"></i>SQL</span>
-          <span class="icon card"><i class="devicon-bash-plain"></i>Bash</span>
-          <span class="icon card"><i class="devicon-amazonwebservices-original"></i>AWS</span>
-          <span class="icon card"><i class="devicon-git-plain"></i>GIT</span>
-          <span class="icon card"><i class="fa fa-csharp" aria-hidden="true">C#</i>C Sharp</span>
-          <span class="icon card"><i class="devicon-docker-plain"></i></i>Docker</span>
-          <span class="icon card"><i class="devicon-dot-net-plain"></i>DOT NET</span>
-          <span class="icon card"><i class="devicon-mongodb-plain"></i>Mongo DB</span>
-          <span class="icon card"><i class="devicon-express-original"></i>Express</span>
-          
-
+          <ul>
+            <li>Software Developer at Linfox Armaguard.</li>
+            <li>Bachelor of Information Technology, Western Sydney University.</li>
+            <li>Strong focus on clean code, scalability, and team collaboration.</li>
+          </ul>
         </div>
       </section>
 
-      <hr class="container" />
-
-      <!-- My Projects -->
-      <section class="project" id="project">
-        <div class="heading" id="section--1">
-          <h1>My Projects</h1>
-        </div>
-
-        <div class="content container">
-          <div class="projectContainer mt-4">
-            <div class="projinfo">
-              <h1>The Shed: Data and User Management</h1>
-              <div class="links">
-                <a href="https://github.com/Bibek-2022/The-Shed"><i class="fab fa-github"></i></a>
-              </div>
-              <div class="mt-2">
-                <h6>Tech: HTML CSS JS</h6>
-              </div>
-              <p class="mt-2">
-                Played a crucial role in engineering a resilient system for user detail recording, accompanied by an intricate database schema overhaul. Employing a tech stack encompassing HTML, CSS, and JavaScript, I concentrated on delivering a cohesive user experience. </p><br>
-                <details>
-            <summary>More...</summary>
-                <p>Notably, I spearheaded the optimization of the database schema, implementing advanced techniques such as table restructuring, normalization, and indexing to enhance data management, retrieval efficiency, and database integrity. Furthermore, I meticulously crafted a user interface, incorporating responsive design and dynamic JavaScript interactions, enabling users to seamlessly input and modify their data. This project serves as a testament to my prowess in front-end technologies and my aptitude for elevating user-centric interfaces while driving back-end performance optimization.
-              </p>
-              </details>
-             
-            </div>
-            <div class="projectimg">
-              <img src="./assets/shed.JPG" alt="" />
-            </div>
-          </div>
-          <div class="projectContainer mt-4">
-            <div class="projectimg">
-              <img src="./assets/project2.JPG" alt="" />
-            </div>
-            <div class="projinfo">
-              <h1>E-Commerce Website</h1>
-              <div class="links">
-                <a href="https://github.com/Bibek-2022/CMS-FullStack"><i class="fab fa-github"></i></a>
-              </div>
-              <div class="mt-2">
-                <h6>Tech: HTML CSS JS REACT EXPRESS NODE JS </h6>
-              </div>
-              <p class="mt-2">
-               I initiated the entire development process of a comprehensive e-commerce website, showcasing my proficiency in a full stack of technologies, including HTML, CSS, JavaScript, React, Express, and Node.js. The project encompassed a fully functional admin interface complete with inventory management, category management, and user management capabilities.
-              </p> <br>
-              <p>
-               Some of the standout features I implemented include: JWT Authentication, Email Verification, Favorites, Advanced Functionality. </p> <br>
-               <details>
-
-            <summary>More...</summary>
-               <p> Project exemplifies my ability to create sophisticated, end-to-end web solutions, blending front-end and back-end technologies seamlessly. It serves as a testament to my skills in building feature-rich web applications that encompass both user-centric and administrative functionalities. </p>
-            </details>
-              </p>
-            </div>
-          </div>
-         
+      <section class="section container" id="experience">
+        <h2>Experience Highlights</h2>
+        <div class="experience-grid">
+          <article class="panel exp-card">
+            <p class="small-title">Engineering</p>
+            <h3>Service & API Development</h3>
+            <p>
+              Developed robust service logic, API endpoints, validation layers,
+              and integration flows to support reliable product behavior.
+            </p>
+          </article>
+          <article class="panel exp-card">
+            <p class="small-title">Data Systems</p>
+            <h3>Database Optimization</h3>
+            <p>
+              Improved schema structure and query performance for better data
+              consistency, maintainability, and reporting efficiency.
+            </p>
+          </article>
+          <article class="panel exp-card">
+            <p class="small-title">Delivery</p>
+            <h3>End-to-End Ownership</h3>
+            <p>
+              Delivered features from planning to release with testing,
+              documentation, stakeholder alignment, and iterative enhancement.
+            </p>
+          </article>
         </div>
       </section>
-      <hr />
-      <div class="about"  id="about_me">
-        <div class="heading  container">
-          <h1>About Me</h1>
-          <div class="myInfo">
-            <div class="info">
-              <p>
-               Experienced with a demonstrated history of working in the higher education industry. Skilled in Personal Branding, Web Design, HTML, Adobe Photoshop, and Critical Thinking. Strong education professional with a Bachelor of Information Systems focused in Information Technology from Western Sydney University. 
-              </p>
-            </div>
-            <!-- <div class="pic">
-              <img src="./assets/Person.png" alt="" />
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <!-- <hr /> -->
-      <!-- education -->
-      <div class="wrap">
-        <div class="education ed" id="education">
-          <div class="heading">
-            <h1>Education</h1>
-          </div>
-          <div class="entries">
-            <div class="entry">
-              <div class="title">2013</div>
-              <div class="body">
-                <p>
-                  School
-                </p><p>
-                 Reliance International Academy
-                </p>
-                
-              </div>
-            </div>
-            <div class="entry">
-              <div class="title">2016</div>
-              <div class="body">
-                <p>
-                  High School
-                </p><p>
-                 Reliance International Academy
-                </p>
-                
-              </div>
-            </div>
-            <div class="entry">
-              <div class="title big">2018</div>
-              <div class="body">
-                <p>
-                  Advance Diploma of Information Technology
-                </p><p>
-                 International Institute of Business and Information Technology
-                </p>
-                
-              </div>
-            </div>
-            <div class="entry">
-              <div class="title big">2021</div>
-              <div class="body">
-                <p>
-                  Bachelor of Information Technology
-                </p><p>
-                 Western Sydney University
-                </p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="contact container" id="contact">
-        <hr style="margin-top: 2rem" />
-        <div class="heading">
-          <h1 class="space">Contact Me!</h1>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Name"
-              />
+      <section class="section container" id="work">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+          <article class="panel project">
+            <h3>The Shed: Data & User Management</h3>
+            <p>
+              Enhanced user-recording workflows and improved data modeling for
+              stronger integrity, cleaner relationships, and faster retrieval.
+            </p>
+            <p class="meta">HTML · CSS · JavaScript · SQL</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Bibek-2022/The-Shed">View Project</a>
+          </article>
+
+          <article class="panel project">
+            <h3>E-Commerce CMS (Full Stack)</h3>
+            <p>
+              Built a complete commerce platform with admin modules,
+              authentication, inventory and category management, and extensible
+              service architecture.
+            </p>
+            <p class="meta">React · Node.js · Express · MongoDB</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Bibek-2022/CMS-FullStack">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-columns">
+          <div class="panel">
+            <h3>Core Development</h3>
+            <div class="skills-grid">
+              <span>Node.js</span><span>Express</span><span>.NET / C#</span
+              ><span>REST API Design</span><span>Authentication</span
+              ><span>SQL</span><span>MongoDB</span><span>AWS</span>
             </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Email"
-              />
+          </div>
+          <div class="panel">
+            <h3>Frontend & Delivery</h3>
+            <div class="skills-grid">
+              <span>JavaScript</span><span>React</span><span>HTML/CSS</span
+              ><span>Responsive UI</span><span>Git</span><span>Docker</span
+              ><span>Testing Mindset</span><span>CI/CD Awareness</span>
             </div>
-            <div class="form-group">
-              <textarea
-                class="form-control"
-                id="message"
-                rows="3"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-outline">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-layout">
+          <div>
+            <h2>Let’s work together</h2>
+            <p>
+              Have an opportunity, collaboration, or project in mind? Send a
+              message and I’ll get back to you soon.
+            </p>
+          </div>
+
+          <form
+            id="contactForm"
+            class="panel contact-form"
+            action="contact.php"
+            method="post"
+          >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required minlength="2" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              minlength="10"
+            ></textarea>
+
+            <button class="btn btn-solid" type="submit">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
           </form>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <script src="./script.js"></script>
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> Bibek Shrestha — Software Developer.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
