@@ -1,0 +1,13 @@
+{
+  "name": "bibek-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "build": "echo 'Static portfolio: no build step required'",
+    "start": "echo 'Use a static/PHP host to run this site'"
+  }
+}

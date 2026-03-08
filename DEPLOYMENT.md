@@ -37,3 +37,12 @@ After deployment:
 4. Confirm the message arrives at the configured recipient.
 
 If email fails, the UI shows a fallback message with the direct contact email.
+
+## 6) Vercel Node.js version setting
+If deploying through Vercel, set **Project Settings → Node.js Version** to **24.x**.
+This repository now also pins Node via:
+
+- `package.json` → `"engines": { "node": "24.x" }`
+- `.nvmrc` → `24`
+
+This resolves the error: `Found invalid or discontinued Node.js Version: "14.x"`.
