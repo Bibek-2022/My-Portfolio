@@ -1,19 +1,41 @@
-const btnScrollTo = document.querySelector(".btn--scroll-to");
-const section1 = document.querySelector("#section--1");
-btnScrollTo.addEventListener("click", function (e) {
-  const s1coords = section1.getBoundingClientRect();
-  console.log(s1coords);
+const year = document.querySelector("#year");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
-  // scrolling
-  // window.scrollTo(
-  //   s1coords.left + window.pageXOffset,
-  //   s1coords.top + window.pageYOffset
-  // );
-  // window.scrollTo({
-  //   left: s1coords.left + window.pageXOffset,
-  //   top: s1coords.top + window.pageYOffset,
-  //   behavior: 'smooth',
-  // });
+const contactForm = document.querySelector("#contactForm");
+const formStatus = document.querySelector("#formStatus");
 
-  section1.scrollIntoView({ behavior: "smooth" });
-});
+if (contactForm && formStatus) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    formStatus.className = "form-status";
+    formStatus.textContent = "Sending your message...";
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Unable to send message.");
+      }
+
+      formStatus.classList.add("success");
+      formStatus.textContent = result.message;
+      contactForm.reset();
+    } catch (error) {
+      formStatus.classList.add("error");
+      formStatus.textContent =
+        error.message || "Something went wrong. Please try again later.";
+    }
+  });
+}
