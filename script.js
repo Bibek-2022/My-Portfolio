@@ -5,6 +5,18 @@ if (year) {
 
 const contactForm = document.querySelector("#contactForm");
 const formStatus = document.querySelector("#formStatus");
+const header = document.querySelector(".header");
+
+const syncHeaderHeight = () => {
+  if (!header) return;
+  document.documentElement.style.setProperty(
+    "--header-height",
+    `${header.offsetHeight}px`
+  );
+};
+
+syncHeaderHeight();
+window.addEventListener("resize", syncHeaderHeight);
 
 const parseJsonSafe = (rawText) => {
   if (!rawText || !rawText.trim()) {
@@ -64,3 +76,25 @@ if (contactForm && formStatus) {
     }
   });
 }
+
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+anchorLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const href = link.getAttribute("href");
+    if (!href || href === "#") return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    event.preventDefault();
+
+    const headerOffset = header ? header.offsetHeight + 16 : 16;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: targetTop - headerOffset,
+      behavior: "smooth",
+    });
+  });
+});

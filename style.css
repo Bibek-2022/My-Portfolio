@@ -1,4 +1,5 @@
 :root {
+  --header-height: 72px;
   --bg: #f8f8ff;
   --bg-soft: #eef7ff;
   --card: rgba(255, 255, 255, 0.76);
@@ -18,6 +19,11 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 24px);
 }
 
 body {
@@ -58,12 +64,19 @@ body {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 10;
   backdrop-filter: blur(8px);
   background: rgba(248, 248, 255, 0.7);
   border-bottom: 1px solid rgba(123, 141, 255, 0.25);
+}
+
+main {
+  padding-top: calc(var(--header-height) + 8px);
 }
 
 .nav {
@@ -93,12 +106,21 @@ body {
   text-decoration: none;
   color: var(--muted);
   font-weight: 600;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .nav nav a:hover,
 .quick-links a:hover,
 .project a:hover {
   color: var(--accent);
+}
+
+.nav nav a:hover {
+  transform: translateY(-1px);
+}
+
+main section[id] {
+  scroll-margin-top: calc(var(--header-height) + 24px);
 }
 
 .hero {
@@ -147,6 +169,12 @@ h1 span {
   border: 1px solid transparent;
   cursor: pointer;
   font: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.05);
 }
 
 .btn-solid {
@@ -193,6 +221,12 @@ h3 {
   border-radius: 18px;
   padding: 1.2rem;
   box-shadow: 0 8px 24px rgba(117, 132, 198, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.panel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(117, 132, 198, 0.18);
 }
 
 .about p,
