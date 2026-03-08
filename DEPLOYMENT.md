@@ -50,7 +50,8 @@ This resolves the error: `Found invalid or discontinued Node.js Version: "14.x"`
 ## 7) Vercel output directory fix
 If Vercel reports `No Output Directory named "public" found`, this repo now includes `vercel.json` with:
 
-- `"framework": "other"`
 - `"outputDirectory": "."`
 
 This tells Vercel to deploy the repository root directly (where `index.html` lives), instead of expecting a generated `public/` directory.
+
+Framework preset can be left as **Auto** in Vercel Project Settings; the repo-level `vercel.json` now only pins commands and output directory.
